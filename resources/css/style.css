@@ -1,0 +1,104 @@
+header, body, .container, nav, .banner, .button, span, div, figure, img, caption{
+  border: 1px solid black;
+}
+html{
+  line-height: 1rem;
+
+}
+
+/*Main container= Body*/
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header Container*/
+header{
+  width: auto;
+  height: 4rem;
+  position: fixed;
+}
+.logo{
+  height: 1.5rem
+}
+header nav{
+
+}
+
+/*Large Containers*/
+section{
+  display: block;
+}
+.container{
+  display: flex;
+}
+.container .split{
+  flex-direction: column;
+  padding: 2rem 0;
+  margin: 0;
+}
+.learn{
+  flex-direction: row;
+  margin: 1.5rem 4.5rem;
+}
+
+/*Large Figures*/
+figure .large, video .large{
+  width: 60%;
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+img .large{
+  display: block;
+}
+caption .large{
+  display: block;
+  text-align: left;
+}
+
+
+/*Small Figures*/
+.info{
+  display: inline-block;
+}
+figure .small{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+img .small {
+  display: inline-block;
+  height: auto;
+  width: 35%;
+  margin: 1rem;
+}
+caption .small{
+  display: inline-block;
+  width: 65%;
+  text-align: left;
+}
+
+/*Courses Figures*/
+figure .courses{
+  display: flex;
+}
+img .courses{
+  display: block;
+  height: auto;
+  width: 100%
+}
+caption .courses{
+  display: block;
+  text-align: left;
+}
+
+
+
+
+/*Banner*/
+.text-box{
+
+}
+.button{
+
+}
