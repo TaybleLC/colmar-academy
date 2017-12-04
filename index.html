@@ -10,21 +10,23 @@
     <div class="container">
       <img class="logo" id="logo" src="resources\images\ic-logo.svg">
       <span>COLMAR ACADEMY</span>
-      <nav>
-        <ul>
-          <li>On campus</li>
-          <li>Online</li>
-          <li>Our companies</li>
-          <li>Sign in</li>
-        </ul>
+      <nav class="topnav">
+          <span>On campus</span>
+          <span>Online</span>
+          <span>Our companies</span>
+          <span>Sign in</span>
       </nav>
     </div>
   </header>
-  <body class="main">
+  <body>
+    <!--Main Container-->
+    <div class="main">
     <!--Container for banner-->
     <div class="banner">
       <div class="container" class="split">
+        <figure class="large">
         <img class="large" id="banner" src="resources\images\banner.jpg">
+      </figure>
         <!--Container for banner text-->
         <div class="text-box">
           <h1>Learn something new everyday</h1>
@@ -32,46 +34,47 @@
           <span class="button">Start here</span>
         </div>
       </div>
-    </div>
+      </div>
+
     <!-- It doesn't hurt to keep practicing section-->
     <section>
       <div class="container" class="split" class="practice">
         <!-- left container for large image-->
         <figure class="large">
           <img class="large" id="info-main" src="resources\images\information-main.jpg">
-          <caption class="large">
+          <figcaption class="large">
             <h2>It doesn't hurt to keep practicing</h2>
             <span>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
             eget magna laoreet, efficitur dolor consequat, trisitique ligula."</span>
             <span>Emanuel, Sr Strategist at Hiring.com</span>
-          </caption>
+          </figcaption>
         </figure>
         <!-- Right container for column of articles-->
         <div class="info">
           <figure class="small">
             <img class="small" id="info-orientation" src="resources\images\information-orientation.jpg">
-            <caption class="small">
+            <figcaption class="small">
               <h4>Orientation date</h4>
               <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
               <a>Read More</a>
-            </caption>
+            </figcaption>
           </figure>
           <figure class="small">
             <img class="small" id="info-campus" src="resources\images\information-campus.jpg">
-            <caption class="small">
+            <figcaption class="small">
               <h4>Our Campus</h4>
               <span>Find which campus is close by you</span>
               <a>Read more</a>
-            </caption>
+            </figcaption>
           </figure>
           <figure class="small">
             <img class="small" id="info-guest" src="resources\images\information-guest-lecture.jpg">
-            <caption class="small">
+            <figcaption class="small">
               <h4>Our guest lecture</h4>
               <span>Join a keynote with Oliver Sack about music in  medical treatment</span>
               <a>Read more</a>
-            </caption>
+            </figcaption>
           </figure>
         </div>
       </div>
@@ -79,60 +82,60 @@
     <!-- Start learning container-->
     <section>
       <h2>Start learning</h2>
-      <div class="container" class="learn">
+      <div class="learn" class="courses">
         <!--Software engineering-->
         <figure class="courses">
           <img class="courses" id="software" src="resources\images\course-software.jpg">
-          <caption class="courses">
+          <figcaption class="courses">
             <h4 >Software enginnering</h4>
             <span>COURSES</span>
             <span>Web Develoopment, Mobile Development, iOT, APIs</span>
-          </caption>
+          </figcaption>
         </figure>
         <!--Computer art-->
         <figure class="courses">
           <img class="courses" id="comp-art" src="resources\images\course-computer-art.jpg">
-          <caption class="courses">
+          <figcaption class="courses">
             <h4>Computer art</h4>
             <span>COURSES</span>
             <span>Imagining & Desing, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
-          </caption>
+          </figcaption>
         </figure>
         <!--Design-->
         <figure class="courses">
           <img class="courses" id="design" src="resources\images\course-design.jpg">
-          <caption class="courses">
+          <figcaption class="courses">
             <h4>Design</h4>
             <span>COURSES</span>
             <span>User Experience Design, User Research, Visual Design</span>
-          </caption>
+          </figcaption>
         </figure>
         <!--Data-->
         <figure class="courses">
           <img class="courses" id="data" src="resources\images\course-data.jpg">
-          <caption class="courses">
+          <figcaption class="courses">
             <h4>Data</h4>
             <span>COURSES</span>
             <span>Data Science, Big Data, SQL, Data Visualization</span>
-          </caption>
+          </figcaption>
         </figure>
         <!--Business-->
         <figure class="courses">
           <img class="courses" id="business" src="resources\images\course-business.jpg">
-          <caption class="courses">
+          <figcaption class="courses">
             <h4>Business</h4>
             <span>COURSES</span>
             <span>Product Development, Business Development, Startup</span>
-          </caption>
+          </figcaption>
         </figure>
         <!--Marketing-->
         <figure class="courses">
           <img class="courses" id="marketing" src="resources\images\course-marketing.jpg">
-          <caption class="courses">
+          <figcaption class="courses">
             <h4>Marketing</h4>
             <span>COURSES</span>
             <span>analytics, Content Marketing, Mobile Marketing</span>
-          </caption>
+          </figcaption>
         </figure>
       </div>
     </section>
@@ -143,39 +146,41 @@
         <!-- Left container for large image-->
         <figure class="large">
           <video class="large"></video>
-          <caption class="large">
+          <figcaption class="large">
             <span>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
             eget magna laoreet, efficitur dolor consequat, trisitique ligula."</span>
-          </caption>
+          </figcaption>
         </figure>
+        <!-- Right container for articles-->
         <div class="info">
           <figure class="small">
             <img class="small" id="fisma" src="resources\images\thesis-fisma.jpg">
-            <caption class="small">
+            <figcaption class="small">
               <h4>Fisma: Design and Prototype</h4>
               <span>Designer showcase of new prototype product</span>
-            </caption>
+            </figcaption>
           </figure>
           <figure class="small">
             <img class="small" id="now" src="resources\images\thesis-now-and-then.jpg">
-            <caption class="small">
+            <figcaption class="small">
               <h4>Now and then</h4>
               <span>Research study about New York</span>
-            </caption>
+            </figcaption>
           </figure>
         </div>
       </div>
     </section>
+  </div>
   </body>
 <!--Footer container-->
   <footer>
     <div class="container">
       <span>&copy; Colmar Academy. All rights reserved</span>
-      <ul>
-        <li>Terms</li>
-        <li>Privacy</li>
-      </ul>
+      <nav class="bottom-nav">
+        <span>Terms</span>
+        <span>Privacy</span>
+      </nav>
     </div>
   </footer>
 

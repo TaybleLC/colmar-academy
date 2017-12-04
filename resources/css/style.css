@@ -1,28 +1,28 @@
-header, body, .container, nav, .banner, .button, span, div, figure, img, caption{
+header, body, .container, nav, .banner, .button, span, div, figure, img, figcaption{
   border: 1px solid black;
 }
-html{
+html, body{
   line-height: 1rem;
-
 }
 
 /*Main container= Body*/
 .main{
   display: flex;
   flex-direction: column;
-  top: 4rem;
-  width: 1080px;
-  justify-content: center;
-  margin: 0;
+  width: 1200px;
+  margin: 4rem auto;
+  justify-content: space-around;
 }
 
 /*Header Container*/
 header{
-  width: 100%;
-  height: 4rem;
-  position: fixed;
-  z-index: 5;
-  display: flex;
+ display: flex;
+ z-index: 5;
+ position: fixed;
+ width: 100%;
+ height: 4rem;
+ justify-content: space-between;
+ align-items: center;
 }
 .logo{
   height: 1.5rem
@@ -30,94 +30,108 @@ header{
 header nav{
 
 }
-
-/*Large Containers*/
+/*General Container rules*/
+    /*Large Containers*/
 section{
   display: block;
 }
 .container{
   display: flex;
   max-width: 1080px;
+  justify-content: center;
+  align-items: center;
 }
 .container .split{
   flex-direction: column;
-  padding: 2rem 0;
+  max-width:100%;
   margin: 0;
+  padding: 2rem 0 2rem 1.5rem;
+  justify-content:center;
+  align-items: center;
 }
-.learn{
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1.5rem 4.5rem;
+/*Banner*/
+.banner{
 
 }
-
-/*Large Figures*/
-figure .large, video .large{
-  width: 60%;
-  display: inline-block;
-  margin: 0 1.5rem;
-}
-img .large{
-  display: block;
-}
-caption .large{
-  display: block;
-  text-align: left;
-}
-
-
-/*Small Figures*/
-.info{
-  display: inline-block;
-}
-figure .small{
+.text-box{
   display: flex;
   flex-direction: column;
-  width: 40%;
-}
-img .small {
-  display: inline-block;
-  height: auto;
-  width: 35%;
-  margin: 1rem;
-}
-caption .small{
-  display: inline-block;
-  width: 65%;
-  text-align: left;
-}
-
-/*Courses Figures*/
-figure .courses{
-  display: flex;
-}
-img .courses{
-  display: block;
-  height: auto;
-  width: 100%
-}
-caption .courses{
-  display: block;
-  text-align: left;
-}
-
-
-
-
-/*Banner*/
-.text-box{
-
+  flex-wrap: wrap;
 }
 .button{
 
 }
+   /*Figures*/
+figure{
 
-
-
-/*Images*/
-#logo{
-  background-image:url()
 }
-#banner{
-  background-image: url("resources/images/banner.jpg");
+figcaption{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*Large Figures (Banner image, Practice image, Video)*/
+figure.large, video.large{
+  width: 60%;
+  overflow:hidden;
+}
+img.large{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin:0;
+}
+figcaption.large{
+  display: block;
+}
+/*Small Figures (Practice Info and Exhibi Info)*/
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+figure.small{
+  display: flex;
+  padding: 1rem;
+}
+img.small{
+  height: 35%;
+  width: 35%;
+  display: inline-block;
+}
+figcaption.small{
+  margin: 0;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Courses Figures*/
+.learn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem 4.5rem;
+}
+figure.courses{
+  width: 330px;
+}
+img.courses{
+  height: auto;
+  width: 330px;
+  margin:0;
+}
+figcaption.courses{
+  margin: 1rem;
+  width: 330px;
 }
