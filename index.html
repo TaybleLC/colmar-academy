@@ -2,19 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="resources\css\reset.css" type="text/css" rel="stylesheet">
     <link href="resources\css\style.css" type="text/css" rel="stylesheet">
     <title>Colmar Academy</title>
   </head>
   <header>
-    <div class="container">
+    <div class="logo-name">
       <img class="logo" id="logo" src="resources\images\ic-logo.svg">
-      <span>COLMAR ACADEMY</span>
+      <span><strong>COLMAR</strong> ACADEMY</span>
+    </div>
       <nav class="topnav">
-          <span>On campus</span>
-          <span>Online</span>
-          <span>Our companies</span>
-          <span>Sign in</span>
+          <span><a href="practice">On campus</a></span>
+          <span><a href="courses">Online</a></span>
+          <span><a href="thesis">Our companies</a></span>
+          <span><a href="sign">Sign in</a></span>
       </nav>
     </div>
   </header>
@@ -30,7 +33,7 @@
         <!--Container for banner text-->
         <div class="text-box">
           <h1>Learn something new everyday</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
           <span class="button">Start here</span>
         </div>
       </div>
@@ -44,10 +47,10 @@
           <img class="large" id="info-main" src="resources\images\information-main.jpg">
           <figcaption class="large">
             <h2>It doesn't hurt to keep practicing</h2>
-            <span>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
-            eget magna laoreet, efficitur dolor consequat, trisitique ligula."</span>
-            <span>Emanuel, Sr Strategist at Hiring.com</span>
+            eget magna laoreet, efficitur dolor consequat, trisitique ligula."</p>
+            <p>Emanuel, Sr Strategist at Hiring.com</p>
           </figcaption>
         </figure>
         <!-- Right container for column of articles-->
@@ -81,14 +84,14 @@
     </section>
     <!-- Start learning container-->
     <section>
-      <h2>Start learning</h2>
+      <h2>Start Learning</h2>
       <div class="learn" class="courses">
         <!--Software engineering-->
         <figure class="courses">
           <img class="courses" id="software" src="resources\images\course-software.jpg">
           <figcaption class="courses">
             <h4 >Software enginnering</h4>
-            <span>COURSES</span>
+            <h5>COURSES</h5>
             <span>Web Develoopment, Mobile Development, iOT, APIs</span>
           </figcaption>
         </figure>
@@ -97,7 +100,7 @@
           <img class="courses" id="comp-art" src="resources\images\course-computer-art.jpg">
           <figcaption class="courses">
             <h4>Computer art</h4>
-            <span>COURSES</span>
+            <h5>COURSES</h5>
             <span>Imagining & Desing, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
           </figcaption>
         </figure>
@@ -106,7 +109,7 @@
           <img class="courses" id="design" src="resources\images\course-design.jpg">
           <figcaption class="courses">
             <h4>Design</h4>
-            <span>COURSES</span>
+            <h5>COURSES</h5>
             <span>User Experience Design, User Research, Visual Design</span>
           </figcaption>
         </figure>
@@ -115,7 +118,7 @@
           <img class="courses" id="data" src="resources\images\course-data.jpg">
           <figcaption class="courses">
             <h4>Data</h4>
-            <span>COURSES</span>
+            <h5>COURSES</h5>
             <span>Data Science, Big Data, SQL, Data Visualization</span>
           </figcaption>
         </figure>
@@ -124,7 +127,7 @@
           <img class="courses" id="business" src="resources\images\course-business.jpg">
           <figcaption class="courses">
             <h4>Business</h4>
-            <span>COURSES</span>
+            <h5>COURSES</h5>
             <span>Product Development, Business Development, Startup</span>
           </figcaption>
         </figure>
@@ -133,7 +136,7 @@
           <img class="courses" id="marketing" src="resources\images\course-marketing.jpg">
           <figcaption class="courses">
             <h4>Marketing</h4>
-            <span>COURSES</span>
+            <h5>COURSES</h5>
             <span>analytics, Content Marketing, Mobile Marketing</span>
           </figcaption>
         </figure>
@@ -141,15 +144,15 @@
     </section>
     <!--Thesis exhibit-->
     <section>
-      <h2>Thesis exhibit</h2>
+      <h2>Thesis Exhibit</h2>
       <div class="container" class="split" class="thesis">
         <!-- Left container for large image-->
         <figure class="large">
-          <video class="large"></video>
+          <video class="large" src="resources\videos\thesis.mp4" height="auto" controls>Video Not Supported</video>
           <figcaption class="large">
-            <span>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
             nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
-            eget magna laoreet, efficitur dolor consequat, trisitique ligula."</span>
+            eget magna laoreet, efficitur dolor consequat, trisitique ligula."</p>
           </figcaption>
         </figure>
         <!-- Right container for articles-->
@@ -175,13 +178,11 @@
   </body>
 <!--Footer container-->
   <footer>
-    <div class="container">
       <span>&copy; Colmar Academy. All rights reserved</span>
       <nav class="bottom-nav">
-        <span>Terms</span>
-        <span>Privacy</span>
+        <span><a>Terms</a></span>
+        <span><a>Privacy</a></span>
       </nav>
-    </div>
   </footer>
 
 </html>

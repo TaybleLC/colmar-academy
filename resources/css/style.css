@@ -1,8 +1,9 @@
-header, body, .container, nav, .banner, .button, span, div, figure, img, figcaption{
-  border: 1px solid black;
-}
+
 html, body{
   line-height: 1rem;
+  justify-content: space-around;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*Main container= Body*/
@@ -10,35 +11,50 @@ html, body{
   display: flex;
   flex-direction: column;
   width: 1200px;
-  margin: 4rem auto;
+  margin: auto;
   justify-content: space-around;
   align-items: center;
-  background-color: hsl(90, 50%, 75%);
+  border: 1px solid;
+  border-color:hsla(90, 90%, 20%, 0.3);
 }
 
 /*Header Container*/
 header{
  display: flex;
  z-index: 5;
- position: fixed;
- width: 100%;
  height: 4rem;
  justify-content: space-between;
  align-items: center;
- margin: 0;
- background-color: hsl(120, 100%, 20%);
+ background-color: hsla(90, 100%, 20%, 0.9);
+ padding: 1rem 1.5rem;
+ margin: 0 auto;
 }
 .logo{
-  height: 1.5rem
-}
-header nav{
+  height: 2rem;
 
 }
+.logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+header nav{
+  margin-right: 1rem;
+}
+
 /*Footer Container*/
 footer{
   display: flex;
   height: 4rem;
-  background-color: hsl(120, 100%, 20%);
+  background-color: hsla(90, 100%, 20%, 0.9);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+}
+footer span{
+  color: hsl(59, 100%, 69%);
 }
 
 /*General Container rules*/
@@ -48,37 +64,47 @@ section{
 }
 .container{
   display: flex;
-  max-width: 1080px;
   justify-content: center;
   align-items: center;
+}
+.container:nth-child(2n+2){
+  background-color: hsla(90, 90%, 20%, 0.2);
 }
 .container .split{
   flex-direction: column;
   max-width:100%;
-  margin: 0;
-  padding: 2rem 0 2rem 1.5rem;
-  justify-content:center;
-  align-items: center;
 }
 /*Banner*/
 .banner{
-
+  background-color: hsl(90, 50%, 75%);
 }
 .text-box{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background-color: white;
+  justify-content: flex-start;
+  width: 40%;
+  padding: 1.5rem;
 }
 .button{
   display: flex;
   font-size: 1.5rem;
   line-height: 2.5rem;
   justify-content: center;
+  background-color: hsla(90, 90%, 20%, 0.3);
+  width: 60%;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.button:hover{
   background-color: hsl(90, 100%, 20%);
-  width: 45%;
-  border: 2px solid hsl
+  transition: 0.1ms ease-out;
+  color: hsl(59, 100%, 69%);
+}
+.banner figure.large{
+  border-bottom: 1rem solid;
+  border-color:  hsl(90, 50%, 75%);
 }
    /*Figures*/
 figure{
@@ -92,19 +118,22 @@ figcaption{
 }
 
 /*Large Figures (Banner image, Practice image, Video)*/
-figure.large, video.large{
+figure.large{
+  display: inline-block;
   width: 60%;
-  overflow:hidden;
+  padding: 2rem 1.5rem;
+  background-color: white;
 }
+
 img.large{
-  display: block;
   max-width: 100%;
   height: auto;
-  margin:0;
+  display: flex;
 }
 figcaption.large{
-  display: block;
   background-color: white;
+  align-items: left;
+  display: block;
 }
 /*Small Figures (Practice Info and Exhibi Info)*/
 .info{
@@ -114,16 +143,17 @@ figcaption.large{
   margin: 0;
   justify-content: center;
   align-items: center;
+
 }
 
 figure.small{
   display: flex;
-  padding: 1rem;
-  background-color: hsl(220, 50%, 40%);
+
 }
 img.small{
   height: 35%;
   width: 35%;
+  padding: 1rem;
   display: inline-block;
 }
 figcaption.small{
@@ -131,8 +161,9 @@ figcaption.small{
   width: 65%;
   justify-content: center;
   align-items: left;
-  background-color: white;
+
 }
+
 
 /*Courses Figures*/
 .learn{
@@ -146,45 +177,73 @@ figcaption.small{
   padding: 2rem 4.5rem;
 }
 figure.courses{
-  width: 330px;
-
+  width: 30%;
 }
 img.courses{
   height: auto;
-  width: 330px;
   margin:0;
+  max-width: 100%;
 }
 figcaption.courses{
-  margin: 1rem;
-  width: 330px;
-
+ background-color: white;
+ padding: 1rem 1rem 1.5rem 1rem;
 }
-
+figcaption.courses:hover{
+  background-color: hsla(90, 90%, 20%, 0.2);
+}
 
 /*Text Styles*/
 h1{
-  color: hsl(120, 100%, 18%);
+  color: hsl(90, 100%, 15%);
   font-size: 3rem;
   font-weight: bold;
-  line-height:3.25rem;
+  line-height:3.4rem;
+  font-family: 'Roboto', sans-serif;
 }
 h2{
-  color: hsl(120, 100%, 18%);
+  color: hsl(90, 100%, 15%);
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
-  line-height: 2.75rem;
+  line-height: 6.5rem;
+  background-color: hsl(90, 50%, 75%);
+  font-family: 'Roboto', sans-serif;
+}
+figcaption.large h2{
   background-color: white;
+  text-align: left;
+}
+h3{
+  font-size:2rem;
+  line-height: 2.5rem;
 }
 h4{
-  font-size: 1.25rem;
+  color: hsl(90, 100%, 15%);
+  font-size: 1.5rem;
   line-height: 1.5rem;
-
+  font-weight: bold;
+}
+h5{
+  font-size: 1.25rem;
+  line-height: 2.25rem;
 }
 span{
     color: hsl(0, 0%, 0%);
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
-a{
 
+nav span, nav a{
+  color: hsl(59, 100%, 69%);
+}
+nav a:hover{
+  color: hsl(90, 100%, 20%);
+}
+nav a:visited{
+    color: hsl(90, 100%, 20%);
+}
+.info a:hover{
+  color: hsl(59, 100%, 69%);
+}
+video{
+  width: 100%;
 }
