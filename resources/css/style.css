@@ -10,7 +10,7 @@ html, body{
 .main{
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   justify-content: space-around;
   align-items: center;
@@ -31,7 +31,6 @@ header{
 }
 .logo{
   height: 2rem;
-
 }
 .logo-name {
   display: flex;
@@ -41,6 +40,9 @@ header{
 }
 header nav{
   margin-right: 1rem;
+}
+.icons{
+  display: none;
 }
 
 /*Footer Container*/
@@ -67,7 +69,7 @@ section{
   justify-content: center;
   align-items: center;
 }
-.container:nth-child(2n+2){
+section:nth-child(2n+0){
   background-color: hsla(90, 90%, 20%, 0.2);
 }
 .container .split{
@@ -83,9 +85,8 @@ section{
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  padding-right: 1.5rem;
   width: 40%;
-  padding: 1.5rem;
 }
 .button{
   display: flex;
@@ -103,13 +104,9 @@ section{
   color: hsl(59, 100%, 69%);
 }
 .banner figure.large{
-  border-bottom: 1rem solid;
-  border-color:  hsl(90, 50%, 75%);
+  background-color: hsl(90, 50%, 75%);
 }
    /*Figures*/
-figure{
-
-}
 figcaption{
   margin: 0;
   display: flex;
@@ -135,6 +132,7 @@ figcaption.large{
   align-items: left;
   display: block;
 }
+
 /*Small Figures (Practice Info and Exhibi Info)*/
 .info{
   display: flex;
@@ -143,25 +141,27 @@ figcaption.large{
   margin: 0;
   justify-content: center;
   align-items: center;
-
 }
 
 figure.small{
   display: flex;
-
+}
+.info-image-container{
+  width: 35%;
+  overflow: hidden;
+  padding: 1rem;
 }
 img.small{
-  height: 35%;
-  width: 35%;
-  padding: 1rem;
-  display: inline-block;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
 }
 figcaption.small{
   margin: 0;
   width: 65%;
   justify-content: center;
   align-items: left;
-
 }
 
 
@@ -203,9 +203,10 @@ h1{
 h2{
   color: hsl(90, 100%, 15%);
   font-size: 2.5rem;
+  line-height: 2.5rem;
   text-align: center;
   font-weight: bold;
-  line-height: 6.5rem;
+  padding: 2rem 0;
   background-color: hsl(90, 50%, 75%);
   font-family: 'Roboto', sans-serif;
 }
@@ -229,9 +230,10 @@ h5{
 }
 span{
     color: hsl(0, 0%, 0%);
-    line-height: 1.5rem;
 }
-
+.info span{
+  margin: .5rem 0;
+}
 nav span, nav a{
   color: hsl(59, 100%, 69%);
 }
@@ -246,4 +248,145 @@ nav a:visited{
 }
 video{
   width: 100%;
+}
+
+/*Mobile Version*/
+@media only screen and (max-width: 480px){
+  /*Hidden Elements*/
+  .logo-name span, .topnav, .bottom-nav, #info-main, .courses img, #thesis-info,
+  figcaption h5, .courses span, p{
+    display: none;
+  }
+  /*Adjusted widths*/
+  section, .container, .info, figure.large, .info-image-container, figure.small,
+  figcaption.small, figure.courses, .text-box, .course h4, .logo-name {
+    width:100%;
+  }
+  /*Main conatiners*/
+  .main{
+    justify-content: center;
+  }
+  .container, .learn{
+    flex-direction: column;
+  }
+  .icons{
+    display:inline-block;
+    border: 1px solid;
+    border-color:hsla(90, 100%, 20%, 0);
+    border-radius: 1rem;
+  }
+  .icons:hover{
+    background-color:hsl(90, 50%, 75%);
+    transition: .3s ease-in;
+  }
+  .logo-name{
+    justify-content: space-between;
+  }
+  /*banner*/
+  figure.large{
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    border: none;
+    background-color: hsl(90, 50%, 75%);
+  }
+  .text-box{
+     justify-content:center;
+     align-items:center;
+     padding: 0;
+  }
+  .text-box h1{
+    padding: 2rem 0 2rem 1rem;
+  }
+  .text-box h4, .small h4, .small span, .small a{
+    padding-left: 1rem;
+  }
+  .button{
+    margin: 1.5rem 0 2rem 0;
+  }
+  /*Practice section info*/
+  .info{
+    padding-bottom:2rem;
+    height: auto;
+  }
+  .info-image-container{
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+  }
+  figure.small{
+    flex-direction: column;
+  }
+  img.small{
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+   display: block;
+  }
+  /*Courses section*/
+  h2{
+    padding: 2rem 0 1rem;
+  }
+  .learn{
+    padding: .5rem 0 0 0;
+  }
+  figcaption.courses{
+    border: 1px solid;
+    border-color:hsla(90, 100%, 20%, 0.9);
+    margin-bottom:.5rem;
+    border-radius: .5rem;
+    padding-right: 0;
+    max-width: 100%;
+  }
+  /*Thesis Section*/
+  video{
+    margin-bottom: 1.5rem;
+  }
+}
+/*Tablet Version*/
+@media only screen and (max-width: 768px) and (min-width: 480px){
+  /*Hidden Elements*/
+  .logo-name span, .topnav, #thesis-info,
+  figcaption h5, .courses span, p{
+    display: none;
+  }
+  .icons{
+    display:inline-block;
+    border: 1px solid;
+    border-color:hsla(90, 100%, 20%, 0);
+    border-radius: 1rem;
+  }
+  .icons:hover{
+    background-color:hsl(90, 50%, 75%);
+    transition: .3s ease-in;
+  }
+  .logo-name{
+    justify-content: space-between;
+  }
+  /*Adjusted widths*/
+  section, .container, .info, figure.large, .info-image-container, figure.small,
+   .text-box, .logo-name {
+    width:100%;
+  }
+  .container{
+    flex-direction: column;
+  }
+  figure.large, .text-box, figcaption.courses{
+    padding: 0;
+  }
+  .text-box h1{
+    padding: 2rem 0 2rem 1rem;
+  }
+  .text-box h4, .large h2{
+    padding-left: 1rem;
+  }
+  figure.courses{
+    margin: 1rem;
+  }
+  .learn{
+    padding: 1rem 2rem;
+  }
+
 }

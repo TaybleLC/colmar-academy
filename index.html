@@ -12,6 +12,9 @@
     <div class="logo-name">
       <img class="logo" id="logo" src="resources\images\ic-logo.svg">
       <span><strong>COLMAR</strong> ACADEMY</span>
+      <a href="practice"><img class="icons" src="resources\images\ic-on-campus.svg"></a>
+      <a href="course"><img class="icons" src="resources\images\ic-online.svg"></a>
+      <a href="button"><img class="icons" src="resources\images\ic-login.svg"></a>
     </div>
       <nav class="topnav">
           <span><a href="practice">On campus</a></span>
@@ -43,7 +46,7 @@
     <section>
       <div class="container" class="split" class="practice">
         <!-- left container for large image-->
-        <figure class="large">
+        <figure class="large" id="info-main">
           <img class="large" id="info-main" src="resources\images\information-main.jpg">
           <figcaption class="large">
             <h2>It doesn't hurt to keep practicing</h2>
@@ -56,15 +59,19 @@
         <!-- Right container for column of articles-->
         <div class="info">
           <figure class="small">
-            <img class="small" id="info-orientation" src="resources\images\information-orientation.jpg">
+            <div class="info-image-container">
+             <img class="small" id="info-orientation" src="resources\images\information-orientation.jpg">
+           </div>
             <figcaption class="small">
-              <h4>Orientation date</h4>
+              <h4>Orientation Date</h4>
               <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
               <a>Read More</a>
             </figcaption>
           </figure>
           <figure class="small">
-            <img class="small" id="info-campus" src="resources\images\information-campus.jpg">
+            <div class="info-image-container">
+              <img class="small" id="info-campus" src="resources\images\information-campus.jpg">
+            </div>
             <figcaption class="small">
               <h4>Our Campus</h4>
               <span>Find which campus is close by you</span>
@@ -72,9 +79,11 @@
             </figcaption>
           </figure>
           <figure class="small">
-            <img class="small" id="info-guest" src="resources\images\information-guest-lecture.jpg">
+            <div class="info-image-container">
+              <img class="small" id="info-guest" src="resources\images\information-guest-lecture.jpg">
+            </div>
             <figcaption class="small">
-              <h4>Our guest lecture</h4>
+              <h4>Our Guest Lecture</h4>
               <span>Join a keynote with Oliver Sack about music in  medical treatment</span>
               <a>Read more</a>
             </figcaption>
@@ -90,7 +99,7 @@
         <figure class="courses">
           <img class="courses" id="software" src="resources\images\course-software.jpg">
           <figcaption class="courses">
-            <h4 >Software enginnering</h4>
+            <h4 >Software Engineering</h4>
             <h5>COURSES</h5>
             <span>Web Develoopment, Mobile Development, iOT, APIs</span>
           </figcaption>
@@ -99,7 +108,7 @@
         <figure class="courses">
           <img class="courses" id="comp-art" src="resources\images\course-computer-art.jpg">
           <figcaption class="courses">
-            <h4>Computer art</h4>
+            <h4>Computer Art</h4>
             <h5>COURSES</h5>
             <span>Imagining & Desing, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
           </figcaption>
@@ -156,16 +165,20 @@
           </figcaption>
         </figure>
         <!-- Right container for articles-->
-        <div class="info">
+        <div class="info" id="thesis-info">
           <figure class="small">
-            <img class="small" id="fisma" src="resources\images\thesis-fisma.jpg">
+            <div class="info-image-container">
+              <img class="small" id="fisma" src="resources\images\thesis-fisma.jpg">
+            </div>
             <figcaption class="small">
               <h4>Fisma: Design and Prototype</h4>
               <span>Designer showcase of new prototype product</span>
             </figcaption>
           </figure>
           <figure class="small">
-            <img class="small" id="now" src="resources\images\thesis-now-and-then.jpg">
+            <div class="info-image-container">
+              <img class="small" id="now" src="resources\images\thesis-now-and-then.jpg">
+            </div>
             <figcaption class="small">
               <h4>Now and then</h4>
               <span>Research study about New York</span>
